@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const AWS = require('aws-sdk');
 const fs = require('fs');
+app.disable('x-powered-by'); // Disable the "X-Powered-By" header
+
 
 AWS.config.region = 'ap-south-1';
 const lambda = new AWS.Lambda({ region: 'ap-south-1' });
