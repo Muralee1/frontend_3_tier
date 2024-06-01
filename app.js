@@ -33,7 +33,7 @@ app.post('/submit', (req, res) => {
       res.status(500).send({ message: 'Error invoking Lambda function' });
     } else {
       console.log(data);
-      res.send({ message: 'Lambda function invoked successfully!' });
+      res.send({ message: 'Lambda function invoked successfully' });
     }
   });
 });
@@ -96,7 +96,7 @@ app.get('/', (req, res) => {
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to Hypha DevOps Cohorts</h1>
+      <h1>Welcome to Hypha DevOps Solutions Architect Cohorts</h1>
       <h2>Enter your name here</h2>
       <form id="userForm">
         <label for="firstName">First Name:</label>
